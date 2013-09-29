@@ -18,9 +18,7 @@ gem 'sass'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'sqlite3'
-group :development, :test do
-  gem "sqlite3", :require => "sqlite3"
-end
+gem "sqlite3", :group => "test"
 # Test requirements
 gem 'shoulda', :group => 'test'
 gem 'rack-test', :require => 'rack/test', :group => 'test'
