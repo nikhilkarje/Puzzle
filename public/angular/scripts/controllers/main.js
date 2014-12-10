@@ -3,7 +3,7 @@
 angular.module('myangApp')
   .controller('MainCtrl', function ($scope) {
     $scope.solved = false;
-    $scope.tiles = []; 
+    $scope.tiles = [];
     for (var i = 0; i < 8; i++) {
       $scope.tiles.push({id:i+1, ps:i+1});
     }
