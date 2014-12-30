@@ -8,7 +8,7 @@
 	%body{"ng-app"=>"myangApp", "ng-controller"=>"MainCtrl"}
 		.hero-unit{"ng-switch on" => "!!solved"}
 			%div{"ng-init" => "scramble();", "ng-switch-when" => "false"}
-				%div{:style => "padding: 5px;"} Arranges the number in order by moving the tile adjacent to the blank space.
+				%div{:style => "padding: 5px;"} Arrange the number in order by moving the tile adjacent to the blank space.
 				%div{"ng-repeat" => "tile in tiles"}
 					%button.tile{"ng-click" => "move(tile.id)", "ng-disabled" => "disable(tile.id)"}{{tile.ps}}
 		        
